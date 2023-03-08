@@ -10,8 +10,14 @@ public class bai_tap_03 {
 		int ns = sc.nextInt();
 		
 		// nhom tuoi 
-		int tuoi=2023-ns;
-		String kqua = (tuoi<16)?"o do tuoi vi thanh nien":(tuoi>18)?"da gia":"o do tuoi truong thanh";
-		System.out.println("ban "+ ten + " "+ kqua);
-	}
+		int tuoi=2023-ns;	
+		if(tuoi<16) {
+			System.out.println("ban "+ten+ " o do tuoi vi thanh nien");
+		}
+		else if(tuoi>=18) {
+		System.out.println("ban "+ten+ " o do tuoi truong thanh");	
+		}
+		else
+			System.out.println("ban "+ten + "da gia");
+}
 }

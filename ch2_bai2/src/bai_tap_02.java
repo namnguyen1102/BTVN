@@ -6,8 +6,9 @@ public static void main(String[] args) {
 	System.out.print("nhap a = ");
 	int a = sc.nextInt();
 	// kiem tra so chan , le
-	String kqua = (a%2==0)?"la so chan":"la so le";
-	System.out.println(a +" "+ kqua );
-
+	if(a%2==0) {
+	System.out.println(a +" la so chan" );
+	}else
+		System.out.println(a+" la so le");
 }
 }
